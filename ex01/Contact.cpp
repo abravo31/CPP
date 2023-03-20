@@ -5,31 +5,29 @@ Contact::Contact(){
     return;
 }
 
+Contact::~Contact(){
+    return;
+}
+
 //Getters
 
-std::string Contact::getName() const{
-    return this->_Name;
-}
+std::string Contact::GetandSetContact() const{
 
-std::string Contact::getLastName() const{
-    return this->_LastName;
-}
-
-std::string Contact::getNickName() const{
-    return this->_NickName;
-}
-
-std::string Contact::getPhoneNumber() const{
-    return this->_PhoneNumber;
-}
-
-std::string Contact::getDarkestSecret() const{
-    return  this->_DarkestSecret;
+    std::cout << "Please enter the first Name : " << std::endl;
+    std::getline(std::cin, this->_Name);
+    std::cout << "Please enter the Last name : " << std::endl;
+    std::getline(std::cin, this->_LastName);
+    std::cout << "Please enter the Nick : " << std::endl;
+    std::getline(std::cin, this->_NickName);
+    std::cout << "Please enter the Phone number : " << std::endl;
+    std::getline(std::cin, this->_PhoneNumber);
+    std::cout << "Can you tell me they DARKEST SECRET ? " << std::endl;
+    std::getline(std::cin, this->_DarkestSecret);
 }
 
 //Setters
 
-void Contact::setName(std::string name){
+void Contact::setContact(std::string name){
     this->_Name = name;
     return ;
 }

@@ -1,6 +1,8 @@
 #ifndef CONTACT_HPP
 # define CONTACT_HPP
 
+# include <iostream>
+# include <iomani>
 # include <string>
 
 class Contact{
@@ -9,6 +11,7 @@ class Contact{
     
     //Contructor & Destructor
         Contact();
+        ~Contact();
 
     //Getters
 

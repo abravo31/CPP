@@ -4,6 +4,7 @@
 # include <iostream>
 # include <iomanip>
 # include <string>
+# include <stdlib.h>
 # include "Contact.hpp"
 
 class PhoneBook{
@@ -13,18 +14,20 @@ class PhoneBook{
     //Contructor & Destructor
         PhoneBook();
         ~PhoneBook();
+
+    // Getters
     
-    void addContact() const;
-    void printContacts() const;
+    void    Welcome() const;
+    void    addContact();
 
     // Setters
-    void setContact() const;
-    
+
+    void    searchContact() const;
+
     private:
     
     Contact _contacts[8];
     int index;
-    int count;
 
 };
 #endif
